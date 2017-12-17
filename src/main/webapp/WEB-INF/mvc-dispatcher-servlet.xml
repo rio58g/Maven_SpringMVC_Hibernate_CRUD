@@ -26,7 +26,7 @@
         <property name="url"
                   value="jdbc:mysql://localhost:3306/BOOKMANAGER"/>
         <property name="username" value="root"/>
-        <property name="password" value="admin"/>
+        <property name="password" value="root"/>
     </bean>
 
     <!-- Hibernate 4 SessionFactory Bean definition -->
@@ -35,7 +35,7 @@
         <property name="dataSource" ref="dataSource"/>
         <property name="annotatedClasses">
             <list>
-                <value>net.proselyte.bookmanager.model.Book</value>
+                <value>com.skorniychuk.bookmanager.model.Book</value>
             </list>
         </property>
         <property name="hibernateProperties">
